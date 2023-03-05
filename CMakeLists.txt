@@ -9,6 +9,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(./libs/ArcEngine/)
 
-add_executable(SandboxApp ./src/main.cpp)
+add_executable(SandboxApp ./src/SandboxApp.cpp)
 target_include_directories(SandboxApp PUBLIC ./libs/ArcEngine/src/)
 target_link_libraries(SandboxApp PRIVATE ArcEngine)
