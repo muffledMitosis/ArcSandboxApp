@@ -16,4 +16,3 @@ AE::Application* AE::CreateApplication()
 {
 	return new SandboxApp();
 }
-```

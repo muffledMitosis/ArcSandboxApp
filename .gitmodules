@@ -1,0 +1,3 @@
+[submodule "libs/ArcEngine"]
+	path = libs/ArcEngine
+	url = https://github.com/muffledMitosis/ArcEngine.git
