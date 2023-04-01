@@ -1,3 +1,4 @@
+#define DEBUG
 #include <ArcEngine.h>
 
 #include <iostream>
@@ -5,22 +6,23 @@
 class SandboxApp : public AE::Application
 {
 public:
-  int i;
 
+  // On Start
 	SandboxApp()
 	{
-    i=0;
+    AE_CORE_INFO("App Started");
+    AE_CLIENT_INFO("LOLL Started");
 	}
 
   // Render Loop 60fps
   void onRender()
   {
-    std::cout << i << std::endl;
-    i++;
   }
 
+  // On Exit
 	~SandboxApp()
 	{
+    AE::Logger::GetClientLogger()->info("App Exit");
 	}
 };
 
